@@ -303,22 +303,29 @@ section {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
-.project-img {
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
-  border-radius: 8px;
-  margin-bottom: 1rem;
-  opacity: 0;
-  animation: fadeIn 0.5s ease-in forwards;
+.project-card h3 {
+  font-size: 1.5rem;
+  color: var(--accent);
+  margin-bottom: 0.5rem;
+  padding-top: 1rem;
+  font-weight: 700;
 }
 
-@keyframes fadeIn { to { opacity: 1; } }
+.project-card p {
+  color: var(--text-secondary);
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
 
-.project-card h3 { font-size: 1.5rem; color: var(--text-primary); margin-bottom: 0.5rem; }
-.project-card p { color: var(--text-secondary); font-size: 1rem; margin-bottom: 1rem; }
-.project-link { color: var(--accent); text-decoration: none; font-weight: 600; }
-.project-link:hover { color: var(--accent-dark); }
+.project-link {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.project-link:hover {
+  color: var(--accent-dark);
+}
 
 /* Skills */
 .skills-list {
@@ -546,7 +553,6 @@ footer a { color: #fff; text-decoration: underline; }
   .hero .profile-img { width: 120px; height: 120px; }
   .section-title { font-size: 2rem; }
   .projects-grid, .education-content { grid-template-columns: 1fr; }
-  .project-img { height: 150px; }
   .flip-card { width: 100%; max-width: 300px; margin: 0 auto 1rem; }
 }
 
